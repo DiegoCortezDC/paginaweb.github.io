@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="en">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="style/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>
+            <header class="contorno" style="text-align: center">
+                <h1 style="padding-top: 50px;" >Estados Unidos Méxicanos</h1>
+            </header>
+            <main class="contorno">
+                <section style="float:right;">
+                     <form>
+                        <label>Estado</label><br>
+                        <select id="lst_edos" onchange="cargarMunicipios()" >
+                            <option value="1">Guanajuato</option>
+                            <option value="2">Michoacan</option>
+                            <option value="3">Tamaulipas</option>
+                        </select><br>
+                        <label>Municipios</label><br>
+                        <select id="lista" >
+                            
+                        </select>
+                        <br><label>Que  indice seleccionaste </label><br><input type="text" id="idOp">
+                        <br><label>Que  texto contiene </label><br><input type="text" id="txtOp">
+                            
+                        </form>
+                </section>
+                <section style="float: left">
+                     <form id="frm_mexico" method="get" enctype="text/plain">
+                        <label>Estado</label><br>
+                        <select id="lista_estados" name="lst_estados" >
+                            <option value="1">Guerrero</option>
+                            <option value="2">Michoacan</option>
+                            <option value="3">Baja California</option>
+                        </select><br>
+                        <label>Municipios</label><br>
+                        <select id="lista_municipios" name="lst_municipios" ></select>
+
+                        </form>
+                </section>
+                
+            </main>
+            <footer class="contorno" style="text-align: center;">
+                <h4 >Derechos reservados de la academia de programacion</h4>
+            </footer>
+        </div>
+        <script src="js/generar_municipios.js" type="text/javascript"></script>
+    </body>
+</html>
